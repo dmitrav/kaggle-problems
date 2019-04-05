@@ -22,11 +22,11 @@ X_train, X_val, Y_train, Y_val, X_all = preprocessing.get_training_and_validatio
                                                                                        test_size=test_set_fraction)
 # list of combinations
 combinations = []
-
 # dictionary to store the mean absolute errors for all algorithms
 maes = []
 
-linear.evaluate_linear_model(X_train, X_val, Y_train, Y_val, X_all)
-
+lr_mae = linear.evaluate_linear_model(X_train, X_val, Y_train, Y_val, X_all)
+combinations.append("lr")
+maes.append(lr_mae)
 
 
