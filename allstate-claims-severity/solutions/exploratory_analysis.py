@@ -23,7 +23,7 @@ pandas.set_option('display.max_rows', None)
 pandas.set_option('display.max_columns', None)
 
 # display the first five rows to get a feel of the data
-if False:
+if True:
     print(dataset.head(5))
 
 # size of the data frame
@@ -71,7 +71,7 @@ if False:
 
 
 # inspect correlations among continuous variables
-if True:
+if False:
     # calculate pearson co-efficient for all combinations
     data_corr = data.corr()
 
